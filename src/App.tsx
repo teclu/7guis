@@ -4,6 +4,7 @@ import Card from './shared/components/Card'
 
 import Counter from './guis/counter'
 import TemperatureConverter from './guis/temperature-converter'
+import FlightBooker from './guis/flight-booker'
 
 const App = (): JSX.Element => {
   return (
@@ -13,6 +14,7 @@ const App = (): JSX.Element => {
         title="Temperature Converter"
         guiComponent={<TemperatureConverter />}
       />
+      <Card title="Flight Booker" guiComponent={<FlightBooker />} />
     </div>
   )
 }
