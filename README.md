@@ -1,25 +1,29 @@
-# New Project
+# 7GUIs
 
-> ✨ Bootstrapped with Create Snowpack App (CSA).
+> ✨ Bootstrapped with [Create Snowpack App (CSA)](https://github.com/snowpackjs/create-snowpack-app).
 
-## Available Scripts
+## Description
 
-### npm start
+This is an ongoing attempt at implementing [7GUIs](https://eugenkiss.github.io/7guis/tasks/) with:
 
-Runs the app in the development mode.
-Open http://localhost:8080 to view it in the browser.
+- [React](https://reactjs.org/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Bootstrap](https://getbootstrap.com/)
 
-The page will reload if you make edits.
-You will also see any lint errors in the console.
+## Implementation Constraints
 
-### npm run build
+- All tasks will be done with [React Hooks](https://reactjs.org/docs/hooks-reference.html) and function components; no class components will be used.
 
-Builds a static copy of your site to the `build/` folder.
-Your app is ready to be deployed!
+- No other libraries will be used (hopefully).
 
-**For the best production performance:** Add a build bundler plugin like "@snowpack/plugin-webpack" to your `snowpack.config.js` config file.
+## Progress
 
-### npm test
-
-Launches the application test runner.
-Run with the `--watch` flag (`npm test -- --watch`) to run in interactive watch mode.
+| Task                                                                                               | Status          |
+| -------------------------------------------------------------------------------------------------- | --------------- |
+| [Counter](https://github.com/teclu/7guis/blob/master/src/guis/counter/index.tsx)                   | Done ✔️         |
+| [Temperature Converter](https://github.com/teclu/7guis/tree/master/src/guis/temperature-converter) | Done ✔️         |
+| [Flight Booker](https://github.com/teclu/7guis/blob/master/src/guis/flight-booker/index.tsx)       | Done ✔️         |
+| Timer                                                                                              | In Progress 🔨  |
+| CRUD                                                                                               | Not Yet Done 💤 |
+| Circle Drawer                                                                                      | Not Yet Done 💤 |
+| Cells                                                                                              | Not Yet Done 💤 |

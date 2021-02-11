@@ -28,9 +28,6 @@ const FlightBooker = (): JSX.Element => {
     if (type === 0) {
       return isValidDate(startDate)
     }
-    console.debug(parseDate(returnDate))
-    console.debug(parseDate(startDate))
-    console.debug(parseDate(returnDate) >= parseDate(startDate))
     return (
       isValidDate(startDate) &&
       isValidDate(returnDate) &&
