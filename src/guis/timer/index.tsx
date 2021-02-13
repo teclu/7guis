@@ -6,17 +6,17 @@ const Timer = (): JSX.Element => {
   const [currDuration, setCurrDuration] = React.useState<number>(0)
   const [maxDuration, setMaxDuration] = React.useState<number>(MAX_DURATION / 2)
 
-  const onResetClick = (): void => setCurrDuration(0)
-
-  const onSliderChange = (event: React.ChangeEvent<HTMLInputElement>): void => {
-    setMaxDuration(parseFloat(event.target.value))
-  }
-
   const getElapsedTime = (): string => {
     if (currDuration < maxDuration) {
       return `${Math.round((currDuration + Number.EPSILON) * 100) / 100}s`
     }
     return `${maxDuration}s`
+  }
+
+  const onResetClick = (): void => setCurrDuration(0)
+
+  const onSliderChange = (event: React.ChangeEvent<HTMLInputElement>): void => {
+    setMaxDuration(parseFloat(event.target.value))
   }
 
   React.useEffect((): (() => void) => {
@@ -30,7 +30,7 @@ const Timer = (): JSX.Element => {
 
   return (
     <>
-      <div className="row mb-3">
+      <div className="row mb-4">
         <div className="col-auto">Elapsed Time:</div>
         <div className="col-auto">
           <div
@@ -49,7 +49,7 @@ const Timer = (): JSX.Element => {
         </div>
         <div className="col-auto">{getElapsedTime()}</div>
       </div>
-      <div className="row mb-3">
+      <div className="row mb-4">
         <div className="col-auto">Duration:</div>
         <div className="col-auto">
           <input

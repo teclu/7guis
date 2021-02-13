@@ -6,20 +6,16 @@ const Counter = (): JSX.Element => {
   const onCountClick = (): void => setCount(count + 1)
 
   return (
-    <div className="row">
-      <div className="col-auto">
-        <input className="form-control" value={count} disabled />
+    <>
+      <div className="row mb-3">
+        <div className="col-auto">
+          <input className="form-control" value={count} disabled />
+        </div>
       </div>
-      <div className="col-auto">
-        <button
-          type="button"
-          className="btn btn-primary"
-          onClick={onCountClick}
-        >
-          Count
-        </button>
-      </div>
-    </div>
+      <button type="button" className="btn btn-primary" onClick={onCountClick}>
+        Count
+      </button>
+    </>
   )
 }
 

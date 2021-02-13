@@ -71,46 +71,55 @@ const FlightBooker = (): JSX.Element => {
   }, [type])
 
   return (
-    <div className="row">
-      <div className="col-auto">
-        <select className="form-select" value={type} onChange={onTypeChange}>
-          {TYPES.map(
-            (option: string, index: number): JSX.Element => (
-              <option key={option} value={index}>
-                {option}
-              </option>
-            )
-          )}
-        </select>
+    <>
+      <div className="row mb-3">
+        <div className="col-auto">
+          <select
+            className="form-select"
+            value={type}
+            onChange={onTypeChange}
+            style={{ width: '225px' }}
+          >
+            {TYPES.map(
+              (option: string, index: number): JSX.Element => (
+                <option key={option} value={index}>
+                  {option}
+                </option>
+              )
+            )}
+          </select>
+        </div>
       </div>
-      <div className="col-auto">
-        <input
-          className={getInputClassName(startDate)}
-          value={startDate}
-          onChange={onStartDateChange}
-        />
+      <div className="row  mb-3">
+        <div className="col-auto">
+          <input
+            className={getInputClassName(startDate)}
+            value={startDate}
+            onChange={onStartDateChange}
+            style={{ width: '225px' }}
+          />
+        </div>
       </div>
-      <div className="col-auto">
-        <input
-          className={getInputClassName(returnDate, true)}
-          value={type === 0 ? '' : returnDate}
-          onChange={onReturnDateChange}
-          disabled={type === 0}
-        />
+      <div className="row mb-3">
+        <div className="col-auto">
+          <input
+            className={getInputClassName(returnDate, true)}
+            value={type === 0 ? '' : returnDate}
+            onChange={onReturnDateChange}
+            disabled={type === 0}
+            style={{ width: '225px' }}
+          />
+        </div>
       </div>
-      <div className="col-auto">
-        <button
-          type="button"
-          className={`btn ${
-            !isBookEnabled() ? 'btn-secondary' : 'btn-primary'
-          }`}
-          disabled={!isBookEnabled()}
-          onClick={onBookClick}
-        >
-          Book
-        </button>
-      </div>
-    </div>
+      <button
+        type="button"
+        className={`btn ${!isBookEnabled() ? 'btn-secondary' : 'btn-primary'}`}
+        disabled={!isBookEnabled()}
+        onClick={onBookClick}
+      >
+        Book
+      </button>
+    </>
   )
 }
 

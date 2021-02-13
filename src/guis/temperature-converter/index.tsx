@@ -32,28 +32,32 @@ const TemperatureConverter = (): JSX.Element => {
   }
 
   return (
-    <div className="row">
-      <div className="col-auto">
-        <div className="input-group">
-          <input
-            className={getInputClassName(celsius)}
-            value={celsius}
-            onChange={onCelsiusChange}
-          />
-          <span className="input-group-text">°C</span>
+    <>
+      <div className="row mb-3">
+        <div className="col-auto">
+          <div className="input-group">
+            <input
+              className={getInputClassName(celsius)}
+              value={celsius}
+              onChange={onCelsiusChange}
+            />
+            <span className="input-group-text">°C</span>
+          </div>
         </div>
       </div>
-      <div className="col-auto">
-        <div className="input-group">
-          <input
-            className={getInputClassName(fahrenheit)}
-            value={fahrenheit}
-            onChange={onFahrenheitChange}
-          />
-          <span className="input-group-text">°F</span>
+      <div className="row mb-3">
+        <div className="col-auto">
+          <div className="input-group">
+            <input
+              className={getInputClassName(fahrenheit)}
+              value={fahrenheit}
+              onChange={onFahrenheitChange}
+            />
+            <span className="input-group-text">°F</span>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 
