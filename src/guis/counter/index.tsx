@@ -3,7 +3,7 @@ import React from 'react'
 const Counter = (): JSX.Element => {
   const [count, setCount] = React.useState<number>(0)
 
-  const onButtonClick = (): void => setCount(count + 1)
+  const onCountClick = (): void => setCount(count + 1)
 
   return (
     <div className="row">
@@ -14,7 +14,7 @@ const Counter = (): JSX.Element => {
         <button
           type="button"
           className="btn btn-primary"
-          onClick={onButtonClick}
+          onClick={onCountClick}
         >
           Count
         </button>

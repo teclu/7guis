@@ -23,7 +23,7 @@ This is an ongoing attempt at implementing [7GUIs](https://eugenkiss.github.io/7
 | [Counter](https://github.com/teclu/7guis/blob/master/src/guis/counter/index.tsx)                   | Done ✔️         |
 | [Temperature Converter](https://github.com/teclu/7guis/tree/master/src/guis/temperature-converter) | Done ✔️         |
 | [Flight Booker](https://github.com/teclu/7guis/blob/master/src/guis/flight-booker/index.tsx)       | Done ✔️         |
-| Timer                                                                                              | In Progress 🔨  |
+| Timer                                                                                              | Done ✔️         |
 | CRUD                                                                                               | Not Yet Done 💤 |
 | Circle Drawer                                                                                      | Not Yet Done 💤 |
 | Cells                                                                                              | Not Yet Done 💤 |
