@@ -21,7 +21,7 @@ const Timer = (): JSX.Element => {
 
   React.useEffect((): (() => void) => {
     const timer: number = setTimeout((): void => {
-      if (currDuration + 0.1 < maxDuration) {
+      if (Math.round(currDuration + 0.1) <= maxDuration) {
         setCurrDuration(currDuration + 0.1)
       }
     }, 100)
