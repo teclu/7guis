@@ -6,6 +6,7 @@ import Counter from './guis/counter'
 import TemperatureConverter from './guis/temperature-converter'
 import FlightBooker from './guis/flight-booker'
 import Timer from './guis/timer'
+import Crud from './guis/crud'
 
 const App = (): JSX.Element => {
   return (
@@ -17,6 +18,7 @@ const App = (): JSX.Element => {
       />
       <Card title="Flight Booker" guiComponent={<FlightBooker />} />
       <Card title="Timer" guiComponent={<Timer />} />
+      <Card title="CRUD" guiComponent={<Crud />} />
     </div>
   )
 }
